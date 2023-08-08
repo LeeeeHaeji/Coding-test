@@ -32,8 +32,6 @@ function solution(numer1, denom1, numer2, denom2) {
         answer[0] = numer_cal/num;
         answer[1] = denom_cal/num;
     }
-    
-    console.log(num)
-    console.log(min)
+
     return answer;
 }
