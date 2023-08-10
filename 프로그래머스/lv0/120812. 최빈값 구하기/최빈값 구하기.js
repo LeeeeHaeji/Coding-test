@@ -6,7 +6,7 @@ function solution(array) {
         answer = array[0];
     } else {
         //0으로 초기화
-        for (let i = 0; i < Math.max(...array) ; ++i) {
+        for (i = 0; i < Math.max(...array) ; ++i) {
             num[i] = 0;
         }
 
