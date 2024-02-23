@@ -4,12 +4,11 @@ function solution(array) {
     if(array.length === 1){
         answer = array[0];
     } else {
-        //0으로 초기화
+        // 0으로 초기화
         // for (i = 0; i < Math.max(...array) ; ++i) {
         //     num_cnt[i] = 0;
         // }
         let num_cnt = Array(Math.max(...array)).fill(0);
-
 
         //num의 index위치가 array에 있는 원소의 값
         //원소의 개수는 해당 index의 값
