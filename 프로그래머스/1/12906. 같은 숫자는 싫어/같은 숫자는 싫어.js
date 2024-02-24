@@ -15,19 +15,17 @@ function solution(arr)
         // not_continue에 값이 없다면
         answer.push(arr[0]);
     } else {
-        let nums = [];
-        // 2-1. 처음~not_continue[0]+1까지
-        nums.push(arr.slice(0, not_continue[0]+1)[0])
+        // 2-1. 처음
+        answer.push(arr[0])
 
         // 2-2. 두번째~
         for(i=0; i<not_continue.length-1; i++){
-            nums.push(arr.slice(not_continue[i]+1, not_continue[i+1]+1)[0]);
+            answer.push(arr.slice(not_continue[i]+1, not_continue[i+1]+1)[0]);
         }
 
         // 2-3. 마지막
-        nums.push(arr.slice(not_continue[not_continue.length-1]+1)[0])
+        answer.push(arr.slice(not_continue[not_continue.length-1]+1)[0])
 
-        answer = nums;
     }
     
     return answer;
