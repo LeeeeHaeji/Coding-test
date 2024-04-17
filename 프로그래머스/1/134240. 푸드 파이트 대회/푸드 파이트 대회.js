@@ -6,6 +6,8 @@ function solution(food) {
             for(j=0; j<(food[i]-1)/2; j++){
                 answer += i;
             }
+            console.log(food[i])
+            console.log((food[i]-1)/2)
         } 
     }
     answer += '0';
