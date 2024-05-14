@@ -10,7 +10,6 @@ function solution(a, b) {
     }
 
     day += b;
-    day = day%7;
 
-    return answer = week[day];
+    return answer = week[day%7];
 }
