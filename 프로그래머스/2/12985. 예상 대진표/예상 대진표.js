@@ -4,7 +4,7 @@ function solution(n,a,b)
     
     while(n !== 2){
         if((a%2 === 0) && (b%2 === 1)){
-            // console.log(`a: ${a}, b: ${b}`);
+            console.log(`a: ${a}, b: ${b}`);
             if(a-b === 1){
                 break;
             } else {
@@ -14,7 +14,7 @@ function solution(n,a,b)
                 b = (b+1)/2;
             }
         } else if((a%2 === 1) && (b%2 === 0)){
-            // console.log(`a: ${a}, b: ${b}`);
+            console.log(`a: ${a}, b: ${b}`);
             if(b-a === 1){
                 break;
             } else {
