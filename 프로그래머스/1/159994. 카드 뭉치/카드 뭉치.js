@@ -40,8 +40,6 @@ function solution(cards1, cards2, goal) {
             
         }
     }
-    
-    (stack.length === 0) ? answer = "Yes" : answer = "No"
 
-    return answer;
+    return "Yes";
 }
