@@ -1,15 +1,13 @@
 function solution(a, b) {
     var answer = '';
-    const week = ["THU","FRI","SAT","SUN","MON","TUE","WED"];
-    const month_end = [31,29,31,30,31,30,31,31,30,31,30,31];
-    
-    let day = 0;
+    const days = ['THU','FRI','SAT','SUN','MON','TUE','WED'];
+    const end_day = [31,29,31,30,31,30,31,31,30,31,30,31];
+    let total_days = 0;
     
     for(i=0; i<a-1; i++){
-        day += month_end[i];
+        total_days += end_day[i];
     }
 
-    day += b;
-
-    return answer = week[day%7];
+    return answer = days[(total_days+b)%7]
+    
 }
