@@ -17,14 +17,18 @@ function solution(n, lost, reserve) {
     
     for(i=0; i<reserve.length; i++){
         for(j=0; j<lost.length; j++){
+
             if((reserve[i]+1) === (lost[j])){
-                lost.shift();
+                lost.splice(j,1);
+                reserve.splice(i,1);
+                i = -1;
             } else if((reserve[i]-1) === lost[j]){
-                lost.shift();
+                lost.splice(j,1);
+                reserve.splice(i,1);
+                i = -1;
             }
+            // console.log(`lost: ${lost}`)
         }
-        
-        // console.log(`lost: ${lost}`)
     }
 
     return n-lost.length;
